@@ -22,25 +22,38 @@ export default function HeroSection() {
           /> */}
         </div>
       </FadeInSection>
+      <FadeInSection>
       <div
-        className="w-full bg-cover bg-center h-[350px] md:h-[600px]"
+        className="w-full bg-cover bg-center h-[550px] md:h-[600px]"
         style={{
           backgroundImage: "url('/assets/gothenburgpanorama.jpg')",
         }}
       >
+      <FadeInSection>
+
         <div className="text-black flex justify-center place-items-center text-center">
-          <div className="max-w-sm mt-35 md:mt-60">
-            <p className="mb-3 bg-slate-50 opacity-90 p-3 border-black border font-bold">
-              144 års samlad erfarenhet i advokatyrket <br />I Göteborg sedan
-              1962.
+          <div className="max-w-xs mt-35 md:mt-60 flex flex-col items-center">
+            <p className="mb-3 bg-slate-50 opacity-90 p-3  border font-serif italic">
+              &quot;En väl etablerad relation med Odevall Advokatbyrå
+              säkerställer en trygg hantering av alla de tvister som kan
+              förekomma&quot;
               {/* Välkommen till Odevall Advokatbyrå i Göteborg! I Göteborg sedan 1962. Med hög
               kompetens och lång erfarenhet erbjuder vi juridiska tjänster och
               rådgivning både till företagare och privatpersoner. */}
             </p>
-            <button className="border-2 bg-white pl-2 pr-2 mt-3 ">Om oss</button>
+            <div className=" flex flex-col w-[100px]">
+              <button className="bg-white   mt-3 ">
+                Rådgivning
+              </button>
+              <button className=" bg-white  mt-3 ">
+                Om oss
+              </button>
+            </div>
           </div>
         </div>
+        </FadeInSection>
       </div>
+        </FadeInSection>
     </div>
   );
 }
