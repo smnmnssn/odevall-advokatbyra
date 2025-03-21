@@ -14,8 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={bodoni.className}>
+    <html lang="en" className={`${bodoni.className} w-full max-w-screen overflow-hidden `}>
       <body>{children}</body>
     </html>
+
   );
 }
