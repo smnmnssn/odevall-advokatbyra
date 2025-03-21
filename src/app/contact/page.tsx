@@ -1,3 +1,5 @@
+"use client";
+import Contact from "@/app/_components/contactform";
 export default function ContactPage() {
-  return <h1>Contact Page</h1>;
+  return <Contact />;
 }

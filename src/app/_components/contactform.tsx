@@ -1,12 +1,11 @@
 "use client";
-import { Bodoni_Moda } from "next/font/google";
 import { Field, Label, Switch } from "@headlessui/react";
+import { Bodoni_Moda } from "next/font/google";
 import { useState } from "react";
 
 const bodoni = Bodoni_Moda({
   subsets: ["latin"],
   weight: ["400", "700"],
-
 });
 
 export default function Contact() {
@@ -27,17 +26,25 @@ export default function Contact() {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className={`${bodoni.className} text-4xl tracking-tight text-balance text-black sm:text-5xl font-serif`} >
+        <h2
+          className={`${bodoni.className} text-4xl tracking-tight text-balance text-black sm:text-5xl font-serif`}
+        >
           Kontakt
         </h2>
-        <p className="mt-2 text-lg/8 text-black font-sans">
-          Här kan ni ställa vilka frågor ni vill och få svar inom 12 timmar.{" "}
-        </p>
+        <div className="mt-10  text-lg/8">
+          <p>Tel: 031-20 06 30</p>
+          <p>Fax: 031-81 24 98</p>
+          <p>E-mail: info@odevall-law.se</p>
+          <p>Besöksadress: Södra vägen 12, 412 54</p>
+          <p>Göteborg Plusgiro: 186320-8</p>
+          <p>Bankgiro: 5701-3021</p>
+          <p className="mt-10 mb-10 italic ">Eller skicka ett e-postmeddelande med formuläret nedanför</p>
+        </div>
       </div>
       <form
         action="#"
         method="POST"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
+        className="mx-auto max-w-xl sm:mt-20"
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
@@ -174,6 +181,13 @@ export default function Contact() {
           >
             Skicka meddelande
           </button>
+          <iframe
+            className="mt-20 border border-black w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.0465908272226!2d11.98086058919653!3d57.69867825324872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff3772796e4db%3A0x1fece42fdec071cc!2zU8O2ZHJhIFbDpGdlbiAxMiwgNDEyIDU0IEfDtnRlYm9yZw!5e0!3m2!1ssv!2sse!4v1742573230278!5m2!1ssv!2sse"
+            width="576"
+            height="450"
+            loading="lazy"
+          ></iframe>
         </div>
       </form>
     </div>

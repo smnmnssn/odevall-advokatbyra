@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/app/_components/accordion";
 import Image from "next/image";
+import Link from "next/link";
 import FadeInSection from "./useinview";
 
 export default function FieldsOfLaw() {
@@ -14,9 +15,8 @@ export default function FieldsOfLaw() {
         <div className="text-center p-2">
           <h1 className="  ">VÅR EXPERTIS</h1>
           <p className="font-sans">
-            Våra advokater har
-            lång erfarenhet inom varje specialområde och kan bistå dig med
-            juridisk rådgivning.
+            Våra advokater har lång erfarenhet inom varje specialområde och kan
+            bistå dig med juridisk rådgivning.
           </p>
         </div>
       </FadeInSection>
@@ -29,22 +29,22 @@ export default function FieldsOfLaw() {
         >
           {/* AFFÄRSJURIDIK */}
           <AccordionItem value="affarsjuridik">
-            <AccordionTrigger className="font-bold ml-2 font-sans">
+            <AccordionTrigger className=" md:text-2xl md:flex md:justify-center font-bold ml-2 text-xl">
               AFFÄRSJURIDIK
             </AccordionTrigger>
-            <AccordionContent>
-              <p className="ml-2 font-sans">
+            <AccordionContent className="md:w-[50%] md:text-center mx-auto">
+              <p className="ml-2 font-sans md:text-xl">
                 Kontakta Odevall Advokatbyrå i Göteborg om du önskar juridisk
                 rådgivning inom affärsjuridik. Vi hjälper dig att ta fram avtal
                 (för exempelvis fastighetsköp, inventarier, affärsuppgörelsen
                 mm.)
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Följande advokater är särskilt inriktade på affärsjuridik:
               </p>
-              <p className="mt-4 ml-2 font-sans">Michael Gibbons</p>{" "}
-              <p className=" ml-2 font-sans">Jan Ohlsson</p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">Michael Gibbons</p>{" "}
+              <p className=" ml-2 font-sans md:text-xl font-bold">Jan Ohlsson</p>
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Affärsjuridik kan handla om de lagar som styr bildandet av
                 företag och hur de kan drivas. Under uppbyggnaden av olika typer
                 av företag, förtydligar affärsjuridiken hur varje typ av
@@ -53,7 +53,7 @@ export default function FieldsOfLaw() {
                 köp av fastigheter, inventarier samt rena affärs och
                 samarbetsuppgörelser.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Till skillnad från många olika juridiska områden har du som
                 klient och din motpart samma intresse, ni vill komma överens! Ni
                 stretar alltså inte åt var sitt håll och försöker vinna ett
@@ -62,35 +62,37 @@ export default function FieldsOfLaw() {
                 att ni från början sätter upp så tydliga regler och riktlinjer
                 som möjligt så att inga konflikter ska uppstå i framtiden.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Vi på Odevall Advokatbyrå har under decennier medverkat vid ett
                 otal olika affärsuppgörelsen med stor tillfredsställelse för
                 alla inblandade parter. Vi häger oss åt era ärenden och har en
                 stor förmåga att sätta oss in i er affär, ert behov. Vår långa
                 erfarenhet hjälper er och är din trygghet för en lyckad affär.
               </p>
-              <button className="border border-black p-2 m-2">
-                Kontakta oss här
-              </button>
+              <Link href="/contact">
+                <button className="border border-black p-2 m-2 cursor-pointer hover:bg-slate-200">
+                  Kontakta oss här
+                </button>
+              </Link>
             </AccordionContent>
           </AccordionItem>
 
           {/* ARBETSRÄTT */}
           <AccordionItem value="arbetsratt">
-            <AccordionTrigger className="font-bold ml-2 font-sans">
+            <AccordionTrigger className=" md:text-2xl md:flex md:justify-center font-bold ml-2 text-xl">
               ARBETSRÄTT
             </AccordionTrigger>
-            <AccordionContent>
-              <p className="ml-2 font-sans">
+            <AccordionContent className="md:w-[50%] md:text-center mx-auto">
+              <p className="ml-2 font-sans md:text-xl">
                 Kontakta Odevall Advokatbyrå i Göteborg om du behöver hjälp vid
                 arbetsrättsliga tvister eller frågor. Vi erbjuder juridisk
                 rådgivning angående LAS, uppsägningar och mycket mer.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Följande advokater är särskilt inriktade på arbetsrätt:
               </p>
-              <p className="mt-4 ml-2 font-sans">Michael Gibbons</p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">Michael Gibbons</p>
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Arbetsrätt handlar i huvudsak om dig som är arbetstagare i ditt
                 förhållande till din arbetsgivare, enklast beskrivet vad du har
                 för rättigheter och skyldigheter vid eventuella tvister. Den
@@ -102,7 +104,7 @@ export default function FieldsOfLaw() {
                 branschspecifika kollektivavtal man kan söka stöd i om man
                 hamnar i tvist med sin arbetsgivare.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Uppsägning är ofta grund till olika konflikter då tolkningar kan
                 skilja sig åt beroende på om du blir uppsagd eller om du som
                 arbetsgivare ska säga upp någon. Som anställd så har du så som
@@ -117,7 +119,7 @@ export default function FieldsOfLaw() {
                 engagemang eller den kompetens som krävs för att hjälpa en part
                 fullt ut när en tvist uppstår.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 De vanligaste skälen till uppsägningar är arbetsbrist eller på
                 grund av personliga skäl. Det krävs saklig grund för att en
                 uppsägning ska följa lagen. Gör den inte det så kan
@@ -164,41 +166,43 @@ export default function FieldsOfLaw() {
                 erfarenhet av arbetsrättsliga frågor och kan på bästa sätt
                 hjälpa er.
               </p>
-              <button className="border border-black p-2 m-2">
-                Kontakta oss här
-              </button>
+              <Link href="/contact">
+                <button className="border border-black p-2 m-2 cursor-pointer hover:bg-slate-200">
+                  Kontakta oss här
+                </button>
+              </Link>
             </AccordionContent>
           </AccordionItem>
 
           {/* ARVSRÄTT */}
           <AccordionItem value="arvsratt">
-            <AccordionTrigger className="font-bold ml-2 font-sans">
+            <AccordionTrigger className=" md:text-2xl md:flex md:justify-center font-bold ml-2 text-xl">
               ARVSRÄTT
             </AccordionTrigger>
-            <AccordionContent>
-              <p className="ml-2 font-sans">
+            <AccordionContent className="md:w-[50%] md:text-center mx-auto">
+              <p className="ml-2 font-sans md:text-xl">
                 Kontakta Odevall Advokatbyrå i Göteborg om du behöver hjälp vid
                 arvsskiften. Vi erbjuder juridisk rådgivning vid bouppteckningar
                 och boutredningar. Vi hjälper också till att ta fram testamenten
                 och rådgör i allmänna arvsfrågor.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Följande advokater är särskilt inriktade på arvsrätt:
               </p>
-              <p className="mt-4 ml-2 font-sans">Ann-Christin Hemsedahl</p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">Ann-Christin Hemsedahl</p>
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Odevall biträder klienter vid arvsfrågor som hur arv skall
                 fördelas, bouppteckningar, boutredningar och när testamenten ska
                 skrivas.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Rätt till arv när någon avlider har efterlevande arvingar enligt
                 arvsordningen. Utefter släktskapets närhet delas arvingarna
                 utöver efterlevande make eller maka, in i tre olika kategorier,
                 s.k. arvsklasser. Här nedan följer några utdrag ur lagen som ger
                 er kunskap i grova drag om hur Arvsrätten ska tolkas.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Den första arvsklassen, är bröstarvingarna med andra ord
                 arvlåtarens barn, bröstarvingarna. Dessa, barn till arvlåtaren
                 erhåller lika stor del (arvslott) av det totala arvet. Arvsrätt
@@ -207,7 +211,7 @@ export default function FieldsOfLaw() {
                 på det avlidna barnets arvslott. Varje arvsgren får lika stor
                 arvslott.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 För arvsrätt syskon och/eller arvsrätt föräldrar gäller
                 följande: är arvlåtarens föräldrar och syskon och syskonens barn
                 och barnbarn o.s.v. De som är efterlevande i andra arvsklassen
@@ -219,7 +223,7 @@ export default function FieldsOfLaw() {
                 syskon har avlidit före arvlåtaren, träder syskonets barn och
                 barnbarn o.s.v. i det avlidna syskonets ställe.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Är far- och morföräldrar och deras barn, dvs. farbröder,
                 fastrar, morbröder och mostrar, men inte far- och
                 morföräldrarnas barnbarn, dvs. arvlåtarens kusiner. Vid kusiner
@@ -229,7 +233,7 @@ export default function FieldsOfLaw() {
                 några arvingar eller något testamente går arvet till den
                 allmänna arvsfonden.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Om den som avlider är gift när han eller hon dör, är huvudregeln
                 att efterlevande maken ärver hela den avlidnes kvarlåtenskap.
                 Har makarna inga gemensamma barn men den avlidna maken
@@ -246,7 +250,7 @@ export default function FieldsOfLaw() {
                 har rätt till arv efter det att även denna maken eller makan
                 avlidit.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Denn rätt kan beskrivas som en äganderätt med de begränsningar
                 att den make som ärver inte får testamentera bort egendom som
                 han eller hon ärvt efter den först avlidna maken genom att i sin
@@ -254,7 +258,7 @@ export default function FieldsOfLaw() {
                 efterlevande maken i stort sett fritt disponera och förbruka den
                 ärvda egendomen.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Barn till en avliden make som inte den andra maken också är
                 förälder till kallas i arvssammanhang för särkullbarn.
                 Särkullbarn har rätt att få ut sitt arv genast och behöver inte
@@ -264,36 +268,38 @@ export default function FieldsOfLaw() {
                 (efterlevande maken). Särkullbarnet blir då efterarvinge i
                 dödsboet efter styvföräldern.
               </p>
-              <button className="border border-black p-2 m-2">
-                Kontakta oss här
-              </button>
+              <Link href="/contact">
+                <button className="border border-black p-2 m-2 cursor-pointer hover:bg-slate-200">
+                  Kontakta oss här
+                </button>
+              </Link>
             </AccordionContent>
           </AccordionItem>
 
           {/* AVTAL & KÖPRÄTT */}
           <AccordionItem value="avtal-kopratt">
-            <AccordionTrigger className="font-bold ml-2 font-sans">
+            <AccordionTrigger className=" md:text-2xl md:flex md:justify-center font-bold ml-2 text-xl">
               AVTAL- & KÖPRÄTT
             </AccordionTrigger>
-            <AccordionContent>
-              <p className="ml-2 font-sans">
+            <AccordionContent className="md:w-[50%] md:text-center mx-auto">
+              <p className="ml-2 font-sans md:text-xl">
                 Kontakta Odevall Advokatbyrå i Göteborg om du behöver hjälp att
                 ta fram juridiska avtal. Vi erbjuder rådgivning och bistår med
                 vår juridiska expertis vid framtagande av köpehandlingar och
                 diverse andra juridiskt bindande avtal.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Följande advokater är särskilt inriktade på köprätt och
                 avtalsrätt:
               </p>
-              <p className="mt-4 ml-2 font-sans">Jan Ohlsson</p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">Jan Ohlsson</p>
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Odevall biträder klienter vid arvsfrågor som hur arv skall
                 fördelas, bouppteckningar, boutredningar och när testamenten ska
                 skrivas.
               </p>
 
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Få har längre erfarenhet av detta ämne än Odevall Advokatbyrå
                 och det gör att du med förtroende kan vända dig till oss när du
                 har ärenden som rör avtal och köprätt. Köplagen är en lag med
@@ -302,32 +308,34 @@ export default function FieldsOfLaw() {
                 undviker konflikter samt spar oftast mycket tid, arbete och inte
                 minst pengar.
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Odevall Advokatbyrå biträder klienter med alla typer av avtal
                 och köprättsfrågor som exempelvis : avtal om köp eller
                 försäljning av företag eller dess verksamhet, Agentavtal,
                 Distributionsavtal, Inköps- och leveransavtal, Licensavtal,
                 Samarbetsavtal, Uppdrags- och tjänsteavtal med mera
               </p>
-              <p className="mt-4 ml-2 font-sans">
+              <p className="mt-4 ml-2 font-sans md:text-xl">
                 Det är inte ovanligt att avtal handlar om kompromisser och
                 jämkningar mellan vad som går att göra eller vad som är lämpligt
                 ur en klients perspektiv, och sedan inte minst vad som är
                 nödvändigt juridiskt. Återigen, vår långa erfarenhet hjälper er
                 rätt.
               </p>
-              <button className="border border-black p-2 m-2">
-                Kontakta oss här
-              </button>
+              <Link href="/contact">
+                <button className="border border-black p-2 m-2 cursor-pointer hover:bg-slate-200">
+                  Kontakta oss här
+                </button>
+              </Link>
             </AccordionContent>
           </AccordionItem>
-          <p className="text-xl m-3 font-extrabold">MEDARBETARE</p>
+          <p className="text-2xl m-3 font-extrabold">MEDARBETARE</p>
           {/* MEDARBETARE - MICHAEL GIBBONS */}
           <AccordionItem value="michael-gibbons">
-            <AccordionTrigger className="font-bold ml-2 font-sans">
+            <AccordionTrigger className=" md:text-2xl md:flex md:justify-center font-bold ml-2 text-xl">
               MICHAEL GIBBONS
             </AccordionTrigger>
-            <AccordionContent className="ml-2 font-sans">
+            <AccordionContent className="md:w-[50%] md:text-center mx-auto font-sans text-xl">
               <h3 className="font-bold mt-2">Inriktning:</h3>
               <p>Affärsjuridik samt bolags- och skatterätt.</p>
               <h3 className="font-bold mt-2">Bakgrund:</h3>
