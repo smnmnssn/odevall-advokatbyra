@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${bodoni.className} w-full overflow-x-hidden`}>
-      <body className="w-full">{children}</body>
+      <body className="w-full bg-slate-200">{children}</body>
     </html>
 
   );

@@ -25,7 +25,7 @@ export default function FieldsOfLaw() {
         <Accordion
           type="single"
           collapsible
-          className="text-black border border-black"
+          className="text-black"
         >
           {/* AFFÄRSJURIDIK */}
           <AccordionItem value="affarsjuridik">
