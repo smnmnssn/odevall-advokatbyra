@@ -24,7 +24,7 @@ export default function HeroSection() {
       </FadeInSection>
       <FadeInSection>
       <div
-        className="w-full bg-cover bg-center h-[550px] md:h-[600px]"
+        className="w-full bg-cover bg-center h-[450px] md:h-[600px]"
         style={{
           backgroundImage: "url('/assets/gothenburgpanorama.jpg')",
         }}
@@ -32,8 +32,8 @@ export default function HeroSection() {
       <FadeInSection>
 
         <div className="text-black flex justify-center place-items-center text-center">
-          <div className="max-w-xs mt-35 md:mt-60 flex flex-col items-center">
-            <p className="mb-3 bg-slate-50 opacity-90 p-3  border font-serif italic">
+          <div className="w-xs md:w-xl md:text-xl mt-15 md:mt-50  flex flex-col items-center">
+            <p className="mb-3 bg-slate-50 opacity-90 p-3  border font-sans italic">
               &quot;En väl etablerad relation med Odevall Advokatbyrå
               säkerställer en trygg hantering av alla de tvister som kan
               förekomma&quot;
@@ -41,12 +41,12 @@ export default function HeroSection() {
               kompetens och lång erfarenhet erbjuder vi juridiska tjänster och
               rådgivning både till företagare och privatpersoner. */}
             </p>
-            <div className=" flex flex-col w-[100px]">
-              <button className="bg-white   mt-3 ">
-                Rådgivning
+            <div className=" flex flex-col w-[100px] items-center">
+              <button className="bg-white w-fit p-3 pt-2 pb-2 mt-10 ">
+                RÅDGIVNING
               </button>
-              <button className=" bg-white  mt-3 ">
-                Om oss
+              <button className=" bg-white w-fit p-3 pt-2 pb-2 mt-2">
+                OM OSS
               </button>
             </div>
           </div>
