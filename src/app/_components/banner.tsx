@@ -6,7 +6,7 @@ export default function Banner() {
   return (
     <div
       id="wrapper"
-      className="w-full flex  justify-center items-center gap-4 p-4 border border-black md:gap-10"
+     className="w-full overflow-hidden flex flex-wrap justify-center items-center gap-4 p-4 border border-black md:gap-10"
     >
       {/* Grundat */}
       <div className="flex items-center gap-2">
