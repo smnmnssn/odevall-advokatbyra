@@ -1,7 +1,6 @@
 import KitchenSinkExample from "../_components/card";
 
 export default function AboutUs() {
-  const bgImage = "/assets/bgImage.jpg";
   return (
     <div className=" w-full p-3 ">
       <div
