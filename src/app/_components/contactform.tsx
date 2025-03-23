@@ -1,5 +1,6 @@
 "use client";
 import { Field, Label, Switch } from "@headlessui/react";
+import { Separator } from "@/components/ui/separator"
 import { Bodoni_Moda } from "next/font/google";
 import { useState } from "react";
 
@@ -12,40 +13,20 @@ export default function Contact() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="font-sans isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="flex flex-col  font-sans isolate bg-white sm:py-32 lg:px-8">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-      >
-        <div
-          style={{
-            clipPath:
-              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-          }}
-          className="relative left-1/2 -z-10 aspect-1155/678 w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
-        />
-      </div>
+      />
+
       <div className="mx-auto max-w-2xl text-center">
         <h2
-          className={`${bodoni.className} text-4xl tracking-tight text-balance text-black sm:text-5xl font-serif`}
+          className={`${bodoni.className}  text-4xl tracking-tight text-balance text-black sm:text-5xl font-serif`}
         >
           Kontakt
         </h2>
-        <div className="mt-10  text-lg/8">
-          <p>Tel: 031-20 06 30</p>
-          <p>Fax: 031-81 24 98</p>
-          <p>E-mail: info@odevall-law.se</p>
-          <p>Besöksadress: Södra vägen 12, 412 54</p>
-          <p>Göteborg Plusgiro: 186320-8</p>
-          <p>Bankgiro: 5701-3021</p>
-          <p className="mt-10 mb-10 italic ">Eller skicka ett e-postmeddelande med formuläret nedanför</p>
-        </div>
       </div>
-      <form
-        action="#"
-        method="POST"
-        className="mx-auto max-w-xl sm:mt-20"
-      >
+      <form action="#" method="POST" className="mx-auto max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label
@@ -181,15 +162,10 @@ export default function Contact() {
           >
             Skicka meddelande
           </button>
-          <iframe
-            className="mt-20 border border-black w-full"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.0465908272226!2d11.98086058919653!3d57.69867825324872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff3772796e4db%3A0x1fece42fdec071cc!2zU8O2ZHJhIFbDpGdlbiAxMiwgNDEyIDU0IEfDtnRlYm9yZw!5e0!3m2!1ssv!2sse!4v1742573230278!5m2!1ssv!2sse"
-            width="576"
-            height="450"
-            loading="lazy"
-          ></iframe>
         </div>
       </form>
+      <Separator className="mt-5 mx-auto" />
+      {/* <hr className="w-[80%] mx-auto"> */}
     </div>
   );
 }

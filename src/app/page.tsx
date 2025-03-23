@@ -1,8 +1,10 @@
+import Contact from "@/app/_components/contactform";
 import Banner1 from "./_components/banner1";
 import Banner2 from "./_components/banner2";
-import LawFields from "./_components/fieldsoflaw";
+import Footer from "./_components/footer";
 import Header from "./_components/header";
 import HeroSection from "./_components/herosection";
+import AboutUs from "./about-us/page";
 
 export default function Home() {
   return (
@@ -11,7 +13,10 @@ export default function Home() {
       <HeroSection />
       <Banner1 />
       <Banner2 />
+      <AboutUs />
+      <Contact />
       {/* <LawFields /> */}
+      <Footer />
     </div>
   );
 }
