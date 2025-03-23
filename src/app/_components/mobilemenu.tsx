@@ -22,7 +22,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     >
       {/* Close button (×) in the top-right corner */}
       <button
-        className="absolute top-5 right-5 text-black text-6xl"
+        className="absolute top-2 right-2 text-black size-10"
         onClick={onClose}
       >
         ×

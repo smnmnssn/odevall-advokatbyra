@@ -3,27 +3,23 @@ import { Separator } from "@/components/ui/separator";
 import { Field, Label, Switch } from "@headlessui/react";
 import { useState } from "react";
 
-;
-
 export default function Contact() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="flex flex-col  font-sans isolate bg-white  lg:px-8 ">
+    <div className="flex flex-col  font-sans isolate   lg:px-8 ">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
       />
 
       <div className="">
-        <p
-          className="text-center text-3xl md:text-6xl text-black font-serif py-7"
-        >
+        <p className="text-center text-3xl md:text-6xl text-black font-serif py-7">
           Kontakt
         </p>
       </div>
-      <div className="flex flex-col items-center md:flex-row md:gap-8 p-3  mx-auto max-w-screen-lg">
-  <form action="#" method="POST" className="w-full ">
+      <div className="flex flex-col lg:flex-row lg:justify-center md:gap-8 p-3 max-w-screen-lg">
+        <form action="#" method="POST" className="w-full ">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label
@@ -166,11 +162,14 @@ export default function Contact() {
           width="600"
           height="450"
           loading="lazy"
-          className="border border-black w- mt-5"
+          className="border border-black  mt-5"
         ></iframe>
       </div>
       <Separator className="mt-5 mx-auto" />
       {/* <hr className="w-[80%] mx-auto"> */}
+      <div>
+        <img src="/assets/lawyerNoBg.svg" alt="dad" className="mx-auto w-80" />
+      </div>
     </div>
   );
 }

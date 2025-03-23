@@ -8,7 +8,7 @@ import AboutUs from "./about-us/page";
 
 export default function Home() {
   return (
-    <div className="w-full max-w-screen overflow-hidden ">
+    <div className="w-full max-w-screen overflow-hidden bg-[url('/assets/bgCream.jpg')] bg-cover bg-no-repeat bg-center ">
       <Header />
       <HeroSection />
       <Banner1 />
