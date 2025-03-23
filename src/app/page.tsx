@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection />
       <Banner1 />
       <Banner2 />
-      <LawFields />
+      {/* <LawFields /> */}
     </div>
   );
 }

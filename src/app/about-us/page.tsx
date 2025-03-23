@@ -1,15 +1,19 @@
-import Image from "next/image";
+import KitchenSinkExample from "../_components/card";
 
 export default function AboutUs() {
+  const bgImage = "/assets/bgImage.jpg";
   return (
-    <div>
-      <Image
-        src="/assets/omoss.jpg"
-        alt="Picture of the author"
-        width={500}
-        height={500}
-      ></Image>
-      <h1>Det här är Odevall Advokatbyrå i Göteborg</h1>
+    <div className="grid grid-cols-1 w-full p-3 ">
+      <div
+        className="text-center mx-auto text-2xl w-65
+"
+      >
+        <p>Odevall Advokatbyrå erbjuder hög kompetens</p>
+      </div>
+      <div className="flex flex-col gap-5 w-xl mx-auto ">
+        <KitchenSinkExample />
+        <KitchenSinkExample />
+      </div>
       <div>
         <p>
           Det här är Odevall Advokatbyrå i Göteborg Såväl företag som

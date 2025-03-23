@@ -1,5 +1,6 @@
 import { Bodoni_Moda } from "next/font/google";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const bodoni = Bodoni_Moda({
   subsets: ["latin"],
@@ -14,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${bodoni.className} w-full overflow-x-hidden`}>
-      <body className="w-full bg-slate-200">{children}</body>
+    <html lang="en" className=" w-full overflow-x-hidden">
+      <body className="w-full ">{children}</body>
     </html>
 
   );

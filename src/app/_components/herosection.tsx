@@ -1,3 +1,4 @@
+import Link  from "next/link";
 import FadeInSection from "./useinview";
 
 export default function HeroSection() {
@@ -41,13 +42,15 @@ export default function HeroSection() {
               kompetens och lång erfarenhet erbjuder vi juridiska tjänster och
               rådgivning både till företagare och privatpersoner. */}
             </p>
-            <div className=" flex flex-col w-[100px] items-center">
-              <button className="bg-white w-fit p-3 pt-2 pb-2 mt-10 ">
+            <div className="flex flex-col w-[100px] items-center">
+              <button className="cursor-pointer bg-white w-fit p-3 pt-2 pb-2 mt-10 ">
                 RÅDGIVNING
               </button>
-              <button className=" bg-white w-fit p-3 pt-2 pb-2 mt-2">
+              <Link href="/about-us">
+              <button className="cursor-pointer bg-white w-fit p-3 pt-2 pb-2 mt-2">
                 OM OSS
               </button>
+              </Link>
             </div>
           </div>
         </div>
