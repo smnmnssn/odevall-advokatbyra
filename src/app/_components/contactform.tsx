@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator"
 import { Bodoni_Moda } from "next/font/google";
 import { useState } from "react";
 
+
 const bodoni = Bodoni_Moda({
   subsets: ["latin"],
   weight: ["400", "700"],
