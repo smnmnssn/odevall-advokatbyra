@@ -16,7 +16,7 @@ export default function Header() {
           alt="Logotype"
           width={500}
           height={500}
-          className="w-[200px] md:w-[450px] md:h-[200px]"
+          className="w-[250px] md:w-[450px] md:h-[200px]"
         ></Image>
         <div
           id="navlinks"

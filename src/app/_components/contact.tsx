@@ -18,7 +18,7 @@ export default function Contact() {
           Kontakt
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row lg:justify-center md:gap-8 p-3 max-w-screen-lg">
+      <div className="flex flex-col lg:flex-row lg:justify-center md:gap-8 p-3 lg:w-[70%] lg:mx-auto">
         <form action="#" method="POST" className="w-full ">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
@@ -28,13 +28,13 @@ export default function Contact() {
               >
                 Förnamn{" "}
               </label>
-              <div className="mt-2.5">
+              <div className="mt-2.5 border-1 border-gray-400">
                 <input
                   id="first-name"
                   name="first-name"
                   type="text"
                   autoComplete="given-name"
-                  className="block w-full rounded-xs bg-white px-3.5 py-2  text-black outline-1 -outline-offset-1 outline-gray-400 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black "
+                  className="block w-full rounded-xs  bg-white px-3.5 py-2  text-black  -outline-offset-1 "
                 />
               </div>
             </div>
@@ -45,13 +45,13 @@ export default function Contact() {
               >
                 Efternamn{" "}
               </label>
-              <div className="mt-2.5">
+              <div className="mt-2.5 border-1 border-gray-400">
                 <input
                   id="last-name"
                   name="last-name"
                   type="text"
                   autoComplete="family-name"
-                  className="block w-full rounded-xs bg-white px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-gray-400 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black"
+                  className="block w-full rounded-xs bg-white px-3.5 py-2 text-base text-black  -outline-offset-1 focus:outline-black"
                 />
               </div>
             </div>
@@ -62,13 +62,13 @@ export default function Contact() {
               >
                 Företag
               </label>
-              <div className="mt-2.5">
+              <div className="mt-2.5 border-1 border-gray-400">
                 <input
                   id="company"
                   name="company"
                   type="text"
                   autoComplete="organization"
-                  className="block w-full rounded-xs bg-white px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-gray-400 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black"
+                  className="block w-full rounded-xs bg-white px-3.5 py-2 text-base text-black  -outline-offset-1 focus:outline-black"
                 />
               </div>
             </div>
@@ -79,13 +79,13 @@ export default function Contact() {
               >
                 E-mail
               </label>
-              <div className="mt-2.5">
+              <div className="mt-2.5 border-1 border-gray-400">
                 <input
                   id="email"
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-xs bg-white px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-gray-400 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black"
+                  className="block w-full rounded-xs bg-white px-3.5 py-2 text-base text-black  -outline-offset-1 focus:outline-black"
                 />
               </div>
             </div>
@@ -96,8 +96,8 @@ export default function Contact() {
               >
                 Telefon{" "}
               </label>
-              <div className="mt-2.5">
-                <div className="flex rounded-xs bg-white outline-1 -outline-offset-1 outline-gray-400 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-black">
+              <div className="mt-2.5 border-1 border-gray-400">
+                <div className="flex rounded-xs bg-white  -outline-offset-1 outline-gray-400 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-black">
                   <input
                     id="phone-number"
                     name="phone-number"
@@ -115,22 +115,22 @@ export default function Contact() {
               >
                 Meddelande
               </label>
-              <div className="mt-2.5">
+              <div className="mt-2.5 border-1 border-gray-400">
                 <textarea
                   id="message"
                   name="message"
                   rows={4}
-                  className="block w-full rounded-xs bg-white px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-gray-400 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black"
+                  className="block w-full rounded-xs bg-white px-3.5 py-2 text-base text-black  -outline-offset-1 focus:outline-black"
                   defaultValue={""}
                 />
               </div>
             </div>
             <Field className="flex gap-x-4 sm:col-span-2">
-              <div className="flex h-6 items-center">
+              <div className="flex h-6 items-center ">
                 <Switch
                   checked={agreed}
                   onChange={setAgreed}
-                  className="group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-black/5 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black data-checked:bg-black"
+                  className="group flex w-8 flex-none cursor-pointer rounded-2xl bg-gray-200 p-px ring-1 ring-black/5 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black data-checked:bg-black"
                 >
                   <span className="sr-only">Agree to policies</span>
                   <span
@@ -151,7 +151,7 @@ export default function Contact() {
           <div className="mt-10">
             <button
               type="submit"
-              className="block w-full border border-gray-400 rounded-xs  px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="block w-full border-1 border-gray-400 rounded-xs  px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-xs hover:bg-[var(--yellow-12)]  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               Skicka meddelande
             </button>
@@ -162,14 +162,11 @@ export default function Contact() {
           width="600"
           height="450"
           loading="lazy"
-          className="border border-black  mt-5"
+          className="border border-black mt-5 w-full"
         ></iframe>
       </div>
       <Separator className="mt-5 mx-auto" />
       {/* <hr className="w-[80%] mx-auto"> */}
-      <div>
-        <img src="/assets/lawyerNoBg.svg" alt="dad" className="mx-auto w-80" />
-      </div>
     </div>
   );
 }
