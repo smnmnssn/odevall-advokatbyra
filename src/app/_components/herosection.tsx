@@ -26,9 +26,9 @@ export default function HeroSection() {
       <FadeInSection>
         <div
           className="w-full bg-cover bg-center h-[450px] md:h-[600px]"
-          // style={{
-          //   backgroundImage: "url('/assets/gothenburgpanorama.jpg')",
-          // }}
+          style={{
+            backgroundImage: "url('/assets/gothenburgpanorama.jpg')",
+          }}
         >
           <FadeInSection>
             <div className="text-black flex justify-center place-items-center text-center">

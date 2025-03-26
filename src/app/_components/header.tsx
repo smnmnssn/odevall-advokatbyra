@@ -22,7 +22,7 @@ export default function Header() {
           id="navlinks"
           className="hidden md:flex  p-5 h-full text-2xl font-serif "
         >
-          <Link href="/" className="p-3 text-black !no-underline">
+          <Link href="contact" className="p-3 text-black !no-underline">
             <p>KONTAKT</p>
           </Link>
           <Link href="/" className="p-3 text-black !no-underline">

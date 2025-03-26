@@ -2,12 +2,14 @@
 import { Separator } from "@/components/ui/separator";
 import { Field, Label, Switch } from "@headlessui/react";
 import { useState } from "react";
+import Header from "./header";
 
 export default function Contact() {
   const [agreed, setAgreed] = useState(false);
 
   return (
     <div className="flex flex-col  font-sans isolate   lg:px-8 ">
+      <Header />
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
