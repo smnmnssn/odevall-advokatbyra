@@ -2,14 +2,12 @@
 import { Separator } from "@/components/ui/separator";
 import { Field, Label, Switch } from "@headlessui/react";
 import { useState } from "react";
-import Header from "./header";
-
+import Link from "next/link";
 export default function Contact() {
   const [agreed, setAgreed] = useState(false);
 
   return (
     <div className="flex flex-col  font-sans isolate   lg:px-8 ">
-      <Header />
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -19,6 +17,9 @@ export default function Contact() {
         <p className="text-center text-3xl md:text-6xl text-black font-serif py-7">
           Kontakt
         </p>
+        <div className="text-center text-2xl w-2xl mx-auto italic">
+          <p>Här kan du kontakta oss genom att skicka ett mail med kontaktformuläret, eller ring oss direkt på: 031-20 06 30.</p>
+        </div>
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-center md:gap-8 p-3 lg:w-[70%] lg:mx-auto">
         <form action="#" method="POST" className="w-full ">
@@ -132,7 +133,7 @@ export default function Contact() {
                 <Switch
                   checked={agreed}
                   onChange={setAgreed}
-                  className="group flex w-8 flex-none cursor-pointer rounded-2xl bg-gray-200 p-px ring-1 ring-black/5 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black data-checked:bg-black"
+                  className="group flex w-8 flex-none cursor-pointer rounded-2xl bg-gray-400 p-px ring-1 ring-black/5 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black data-checked:bg-black"
                 >
                   <span className="sr-only">Agree to policies</span>
                   <span
@@ -142,10 +143,10 @@ export default function Contact() {
                 </Switch>
               </div>
               <Label className="text-sm/6 text-gray-600">
-                By selecting this, you agree to our{" "}
-                <a href="#" className="font-semibold text-black">
-                  privacy&nbsp;policy
-                </a>
+                Markera följande om du godkänner vår{" "}
+                <Link href="/integritetspolicy" className="font-semibold text-black">
+                  integritets&nbsp;policy
+                </Link>
                 .
               </Label>
             </Field>

@@ -33,7 +33,7 @@ export default function HeroSection() {
           <FadeInSection>
             <div className="text-black flex justify-center place-items-center text-center">
               <div className="w-xs md:w-xl text-xl md:text-2xl mt-15 md:mt-50  flex flex-col items-center">
-                <p className="mb-3  p-3   font-sans italic">
+                <p className="mb-3  p-3 font-sans italic">
                   &quot;En väl etablerad relation med Odevall Advokatbyrå
                   säkerställer en trygg hantering av alla de tvister som kan
                   förekomma&quot;
@@ -43,12 +43,12 @@ export default function HeroSection() {
                 </p>
                 <div className="flex flex-col w-[100px] items-center ">
                   <Link href="/">
-                    <button className="cursor-pointer hover:bg-[var(--yellow-12)] text-black tracking-wider border border-black  w-[10rem] md:w-[15rem]   p-3 pt-2 pb-2 mt-10 ">
+                    <button className="cursor-pointer bg-white hover:!bg-[var(--yellow-12)] text-black tracking-wider border border-black  w-[10rem] md:w-[15rem]   p-3 pt-2 pb-2 mt-10 ">
                       RÅDGIVNING
                     </button>
                   </Link>
                   <Link href="/about-us">
-                    <button className="cursor-pointer hover:bg-[var(--yellow-12)] text-black tracking-wider border border-black  w-[10rem] md:w-[15rem]  p-3 pt-2 pb-2 mt-2  ">
+                    <button className="cursor-pointer bg-white hover:!bg-[var(--yellow-12)] text-black tracking-wider border border-black  w-[10rem] md:w-[15rem]  p-3 pt-2 pb-2 mt-2  ">
                       OM OSS
                     </button>
                   </Link>
