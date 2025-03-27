@@ -5,7 +5,7 @@ import Footer from "./_components/footer";
 import Header from "./_components/header";
 import HeroSection from "./_components/herosection";
 import AboutUs from "./about-us/page";
-import FieldsOfLaw from "./_components/fieldsoflaw";
+// import FieldsOfLaw from "./_components/fieldsoflaw";
 import ServicesSection from "./_components/services";
 
 export default function Home() {
