@@ -3,9 +3,9 @@ import KitchenSinkExample from "../_components/card";
 
 export default function AboutUs() {
   return (
-    <div className=" w-full p-3 md:w-[80%] mx-auto  ">
-      <div className="text-center mx-auto text-2xl w-65">
-        <p>Odevall Advokatbyrå erbjuder hög kompetens</p>
+    <div className=" w-full p-3 md:w-[60%] mx-auto  ">
+      <div className="text-center mx-auto text-2xl">
+        <p className="md:text-3xl p-2 md:p-15">Vi på Odevall Advokatbyrå har över 140 års samlad yrkeserfarenhet och står redo att representera dig.</p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mx-auto ">
         <KitchenSinkExample />
@@ -13,8 +13,8 @@ export default function AboutUs() {
         <KitchenSinkExample />
         <KitchenSinkExample />
       </div>
-      <div className="mt-10 mx-auto">
-        <Separator className="text-black" />
+      <div className="">
+        <Separator className="text-black mt-5 mx-auto" />
       </div>
     </div>
   );

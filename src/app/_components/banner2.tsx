@@ -7,14 +7,14 @@ export default function Banner2() {
   return (
     <div
       id="wrapper"
-      className="w-full overflow-hidden flex flex-wrap justify-center items-center gap-4 p-4  md:gap-10 md:text-2xl"
+      className="w-full overflow-hidden flex flex-wrap justify-center items-center md:text-2xl gap-x-10 lg:gap-x-60 gap-y-4 py-6 text-center"
     >
       {/* Grundat */}
       <div className="flex items-center gap-2">
-        <FaBalanceScale className="size-12 md:size-20" />
+        <FaBalanceScale className="size-12 md:size-20 mb-3" />
         <FadeInSection>
           <div className="text-center">
-            <p className="font-bold underline">1962</p>
+            <p className="font-bold underline m-0 ">1962</p>
             <p className="text-md font-bold">GRUNDAT</p>
           </div>
         </FadeInSection>
@@ -22,10 +22,10 @@ export default function Banner2() {
 
       {/* Erfarenhet */}
       <div className="flex items-center gap-2">
-        <FaAward className="size-12 md:size-20" />
+        <FaAward className="size-12 md:size-20 mb-3" />
         <FadeInSection>
           <div className="text-center text-md font-bold">
-            <p className="underline">144 ÅR</p>
+            <p className="underline m-0">144 ÅR</p>
             <p>ERFARENHET</p>
           </div>
         </FadeInSection>
@@ -33,10 +33,10 @@ export default function Banner2() {
 
       {/* Vunna fall */}
       <div className="flex items-center gap-2">
-        <GiPodiumWinner className="size-12 md:size-20" />
+        <GiPodiumWinner className="size-12 md:size-20 mb-3" />
         <FadeInSection>
           <div className="text-center text-md font-bold">
-            <p className="underline">3444</p>
+            <p className="underline m-0">3444</p>
             <p>VUNNA FALL</p>
           </div>
         </FadeInSection>

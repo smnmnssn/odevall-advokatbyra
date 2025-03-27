@@ -4,17 +4,17 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/app/_components/accordion";
-import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import FadeInSection from "./useinview";
 
 export default function FieldsOfLaw() {
   return (
-    <div id="wrapper">
+    <div id="wrapper" className="">
       <FadeInSection>
         <div className="text-center p-2">
           <h1 className="  ">VÅR EXPERTIS</h1>
-          <p className="font-sans">
+          <p className="font-sans ">
             Våra advokater har lång erfarenhet inom varje specialområde och kan
             bistå dig med juridisk rådgivning.
           </p>
@@ -22,11 +22,7 @@ export default function FieldsOfLaw() {
       </FadeInSection>
 
       <FadeInSection>
-        <Accordion
-          type="single"
-          collapsible
-          className="text-black"
-        >
+        <Accordion type="single" collapsible className="text-black">
           {/* AFFÄRSJURIDIK */}
           <AccordionItem value="affarsjuridik">
             <AccordionTrigger className=" md:text-2xl md:flex md:justify-center font-bold ml-2 text-xl">
@@ -42,8 +38,12 @@ export default function FieldsOfLaw() {
               <p className="mt-4 ml-2 font-sans md:text-xl">
                 Följande advokater är särskilt inriktade på affärsjuridik:
               </p>
-              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">Michael Gibbons</p>{" "}
-              <p className=" ml-2 font-sans md:text-xl font-bold">Jan Ohlsson</p>
+              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">
+                Michael Gibbons
+              </p>{" "}
+              <p className=" ml-2 font-sans md:text-xl font-bold">
+                Jan Ohlsson
+              </p>
               <p className="mt-4 ml-2 font-sans md:text-xl">
                 Affärsjuridik kan handla om de lagar som styr bildandet av
                 företag och hur de kan drivas. Under uppbyggnaden av olika typer
@@ -91,7 +91,9 @@ export default function FieldsOfLaw() {
               <p className="mt-4 ml-2 font-sans md:text-xl">
                 Följande advokater är särskilt inriktade på arbetsrätt:
               </p>
-              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">Michael Gibbons</p>
+              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">
+                Michael Gibbons
+              </p>
               <p className="mt-4 ml-2 font-sans md:text-xl">
                 Arbetsrätt handlar i huvudsak om dig som är arbetstagare i ditt
                 förhållande till din arbetsgivare, enklast beskrivet vad du har
@@ -189,7 +191,9 @@ export default function FieldsOfLaw() {
               <p className="mt-4 ml-2 font-sans md:text-xl">
                 Följande advokater är särskilt inriktade på arvsrätt:
               </p>
-              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">Ann-Christin Hemsedahl</p>
+              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">
+                Ann-Christin Hemsedahl
+              </p>
               <p className="mt-4 ml-2 font-sans md:text-xl">
                 Odevall biträder klienter vid arvsfrågor som hur arv skall
                 fördelas, bouppteckningar, boutredningar och när testamenten ska
@@ -292,7 +296,9 @@ export default function FieldsOfLaw() {
                 Följande advokater är särskilt inriktade på köprätt och
                 avtalsrätt:
               </p>
-              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">Jan Ohlsson</p>
+              <p className="mt-4 ml-2 font-sans md:text-xl font-bold">
+                Jan Ohlsson
+              </p>
               <p className="mt-4 ml-2 font-sans md:text-xl">
                 Odevall biträder klienter vid arvsfrågor som hur arv skall
                 fördelas, bouppteckningar, boutredningar och när testamenten ska
@@ -329,47 +335,10 @@ export default function FieldsOfLaw() {
               </Link>
             </AccordionContent>
           </AccordionItem>
-          <p className="text-2xl m-3 font-extrabold">MEDARBETARE</p>
-          {/* MEDARBETARE - MICHAEL GIBBONS */}
-          <AccordionItem value="michael-gibbons">
-            <AccordionTrigger className=" md:text-2xl md:flex md:justify-center font-bold ml-2 text-xl">
-              MICHAEL GIBBONS
-            </AccordionTrigger>
-            <AccordionContent className="md:w-[50%] md:text-center mx-auto font-sans text-xl">
-              <h3 className="font-bold mt-2">Inriktning:</h3>
-              <p>Affärsjuridik samt bolags- och skatterätt.</p>
-              <h3 className="font-bold mt-2">Bakgrund:</h3>
-              <p>
-                Fördjupade akademiska studier i företagsekonomi samt bolags- och
-                skatterätt. Arbete på länsrätt.
-              </p>
-              <p className="mt-2">
-                Verksam vid Odevall Advokatbyrå AB sedan år 1980.
-              </p>
-              <p className="mt-2">Advokat sedan år 1983.</p>
-
-              <h2 className="text-xl font-bold mt-4 mb-2">Kontakt</h2>
-              <h3 className="font-bold">Besöksadress:</h3>
-              <p>Södra vägen 12, 412 54 Göteborg</p>
-              <p className="font-bold mt-2">Tel:</p>
-              <p>+46 (0) 31 20 06 30</p>
-              <p className="font-bold mt-2">Fax:</p>
-              <p>+46 (0) 31-81 24 98</p>
-              <p className="font-bold mt-2">gibbons@odevall-law.se</p>
-
-              <div className="flex justify-center">
-                <Image
-                  src="/assets/gibbons.png"
-                  alt="Michael Gibbons picture"
-                  width={300}
-                  height={300}
-                  className="rounded-xs mt-4 w-[200px] h-[250px]"
-                />
-              </div>
-            </AccordionContent>
-          </AccordionItem>
         </Accordion>
       </FadeInSection>
+      <Separator className="mt-5 mx-auto" />
+
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function KitchenSinkExample() {
   
   return (
     <Card className='bg-transparent border-0 '>
-      <Card.Img variant="top" src="/assets/lawyerNoBg.svg" className='h-[350px]' />
+      <Card.Img variant="top" src="/assets/lawyerNoBg.svg" className='h-[350px] filter grayscale' />
       <Separator className='bg-black w-full mx-auto' />
       <Card.Body className=''> 
         <Card.Title>Jan Göranson</Card.Title>
